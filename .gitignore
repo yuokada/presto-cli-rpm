@@ -27,3 +27,4 @@
 *.exe
 *.out
 *.app
+presto-cli
