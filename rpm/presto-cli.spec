@@ -1,4 +1,4 @@
-%define    prefix  /
+%define    prefix  /usr/local
 %define    debug_package %{nil}
 
 Name:      presto-cli
@@ -12,7 +12,7 @@ BuildArch: x86_64
 Source0:   presto-cli
 # (only create temporary directory name, for RHEL5 compat environment)
 # see : http://fedoraproject.org/wiki/Packaging:Guidelines#BuildRoot_tag
-Prefix:    /
+Prefix:    %{prefix}
 BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 
 %description
@@ -22,13 +22,13 @@ BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 %build
 
 %install
-%{__install} -Dp -m0755 presto-cli %{buildroot}/usr/local/bin/%{name}
+%{__install} -Dp -m0755 presto-cli %{buildroot}/%{prefix}/bin/%{name}
 
 %clean
 
 %files
 %defattr(0755,root,root)
-%{prefix}/usr/local/bin/presto-cli
+%{prefix}/bin/presto-cli
 
 %pre
 
