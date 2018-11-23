@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash -xe
 WORK_DIR=`pwd`
 BUILD_NAME=presto-cli
 BUILD_SPEC=rpm/${BUILD_NAME}.spec
