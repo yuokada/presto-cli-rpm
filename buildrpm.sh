@@ -4,7 +4,7 @@ BUILD_NAME=presto-cli
 BUILD_SPEC=rpm/${BUILD_NAME}.spec
 BUILD_DIR=${WORK_DIR}/rpmbuild
 BUILD_NUMBER=${BUILD_NUMBER:=0}
-PRESTO_VERSION=${PRESTO_VERSION:=0.171}
+PRESTO_VERSION=${PRESTO_VERSION:=0.192}
 ARCHIVE_DIR=${WORK_DIR}/${BUILD_NAME}
 JAR_URL="http://search.maven.org/remotecontent?filepath=com/facebook/presto/presto-cli/${PRESTO_VERSION}/presto-cli-${PRESTO_VERSION}-executable.jar"
 JAR_FILE=${BUILD_NAME}
