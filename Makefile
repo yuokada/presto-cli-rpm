@@ -1,5 +1,5 @@
-PRESTO_VERSION=0.192
-JAR_URL= "http://search.maven.org/remotecontent?filepath=com/facebook/presto/presto-cli/$(PRESTO_VERSION)/presto-cli-$(PRESTO_VERSION)-executable.jar"
+PRESTO_VERSION=304
+JAR_URL= "http://search.maven.org/remotecontent?filepath=io/prestosql/presto-cli/$(PRESTO_VERSION)/presto-cli-$(PRESTO_VERSION)-executable.jar"
 JAR_FILE=presto-cli
 
 fetch:
