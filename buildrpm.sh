@@ -16,8 +16,8 @@ if [[ ! -e ${BUILD_NAME} ]]; then
   wget -O ${JAR_FILE} ${JAR_URL}
 fi
 
-/bin/cp  ./presto-cli                               ${BUILD_DIR}/SOURCES/
-/bin/cp  ./presto-cli                               ${BUILD_DIR}/BUILD/
+/bin/cp ./presto-cli ${BUILD_DIR}/SOURCES/
+/bin/cp ./presto-cli ${BUILD_DIR}/BUILD/
 
 /usr/bin/rpmbuild -v \
   --define "version ${PRESTO_VERSION}" \
